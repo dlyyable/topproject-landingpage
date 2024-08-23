@@ -5,15 +5,14 @@ body {
     /* height: 100%; */
     font-family: Roboto, sans-serif;
 
-    flex-direction: column;
     justify-content: space-between;
 }
 
 a {
     text-decoration: none;
-    color: #F9FAF8;
+    color: #E5E7EB;
 
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 200;
 }
 
@@ -24,6 +23,10 @@ a {
 /* *** FOR RE-USE PURPOSES *** */
 .flex {
     display: flex;
+}
+
+.flexcol {
+    flex-direction: column;
 }
 
 .dark-bg {
@@ -43,10 +46,6 @@ a {
     padding: 32px;
 
     gap: 26px;
-    /* justify-content: space-between; */
-    /* align-items: center; */
-    
-    /* border: 2px solid red; */
 }
 
 .logo {
@@ -55,17 +54,22 @@ a {
     font-weight: 600;
 }
 
+.logoimg {
+    max-height: 40px;
+}
 
 /* HERO */
 .hero {
     min-height: 300px;
     justify-content: space-between;
+    align-items: center;
+    
+    padding: 32px 120px;
 }
 
-.hero-container {
-    flex-direction: column;
-    padding: 32px;
-}
+/* .hero-container {
+    padding: 32px 100px;
+} */
 
 .hero-header {
     color:#F9FAF8;
@@ -105,7 +109,6 @@ a {
     /* border: 3px solid green; */
     padding: 38px;
 
-    flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 10px;
@@ -131,7 +134,6 @@ a {
 .card-container-in {
     justify-content: center;
     align-items: center;
-    flex-direction: column;
 
     width: 200px;
     /* height: 200px; */
@@ -152,13 +154,10 @@ a {
     font-size: 18px;
     text-align: center;
     margin-top: 10px;
-    
-
 }
 
 .content2 {
     background-color: #E5E7EB;
-    flex-direction: column;
     justify-content: center;
     padding: 50px 200px;
 }
@@ -177,6 +176,34 @@ a {
     font-weight: 800;
     align-self: flex-end;
 }
+
+.content3 {
+    justify-content: center;
+    align-items: center;
+
+    padding: 70px 0px;
+}
+
+.cta {
+    background-color: #3882F6;
+    color: #E5E7EB;
+    border-radius: 10px;
+
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+    padding: 30px 70px;
+}
+
+.cta-text1 {
+    font-weight: 600;
+}
+
+.cta-text2 {
+    font-weight: 200;
+    font-size: 12px;
+}
+
 
 /* FOOTER */
 .footer {
